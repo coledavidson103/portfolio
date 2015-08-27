@@ -1,0 +1,11 @@
+@media (min-width: 60em /*960px*/) {
+	
+	main {
+		width: 60em;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+
+
+}

@@ -35,7 +35,7 @@ h2 {
 	}
 
 	.logo {
-		width: 70%; 
+		width: 60%; 
 		float: left;
 	}
 
@@ -49,12 +49,21 @@ h2 {
 	}
 
 	nav {
-		width: 25%;
+		width: 35%;
 		color: #fff;
 		float: right;
 		margin-top: 1em;
 		margin-right: 0.5em;
 		text-align: right;
+	}
+
+	nav a {
+		color: #fff;
+		text-decoration: none;
+	}
+
+	nav a:hover {
+		color: #039BE5;
 	}
 
 	h2.page-title {
@@ -79,6 +88,7 @@ h2 {
 	.next {
 		line-height: 5em;
 		text-align: center;
+		border-bottom: 1px solid #58585a;
 	}
 
 	.blue-button {
@@ -102,6 +112,7 @@ h2 {
 	.sort {
 		text-transform: uppercase;
 		text-align: center;
+		padding: 0.5em;
 	}
 
 	.sort p {
@@ -136,4 +147,20 @@ h2 {
 	.social {
 		text-align: center;
 		margin: 1em 0;
-	}	
+	}
+
+	.social li {
+		display: inline-block;
+		padding: 0.5em;
+	}
+
+	.social a {
+		color: #58585a;
+	}
+
+	.copyright {
+		background-color: #333;
+		color: #fff;
+		text-align: center;
+		padding: 0.5em;	
+	}
