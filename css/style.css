@@ -7,6 +7,16 @@ body {
 	color: #58585a;
 	font-size: 1em;
 	font-family: 'Source Sans Pro', Helvetica, arial, sans-serif;
+	color: #58585a;
+}
+
+strong {
+	font-weight: 800;
+}
+
+h2 {
+	font-family: Pacifico, Times, serif;
+	font-size: 2em;
 }
 
 /***** HEADER *****/
@@ -47,10 +57,12 @@ body {
 		text-align: right;
 	}
 
-	.page-title h2 {
-		font-size: 3em;
+	h2.page-title {
+		font-size: 5em;
 		text-align: center;
 		color: #fff;
+		margin: 50% 0;
+		text-shadow: 2px 2px #222;
 	}
 
 /***** MAIN *****/
@@ -79,6 +91,7 @@ body {
 		color: #fff;
 		text-decoration: none;
 		text-align: center;
+		letter-spacing: 0.05em;
 	}
 
 	.blue-button:hover {
@@ -88,6 +101,15 @@ body {
 
 	.sort {
 		text-transform: uppercase;
+		text-align: center;
+	}
+
+	.sort p {
+		display: inline-block;
+	}
+
+	.sort ul {
+		display: inline-block;
 	}
 
 	.sort li {
@@ -99,9 +121,19 @@ body {
 	}
 
 	.workspace h2 {
-		font-size: 2em;
+		text-align: center;
+		padding: 0.5em;
+		color: #fff;
 	}
 
 	.work img {
 		width: 100%;
+		padding: 0 0 1.5em 0;
 	}
+
+/*****FOOTER*****/
+
+	.social {
+		text-align: center;
+		margin: 1em 0;
+	}	
