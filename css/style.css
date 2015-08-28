@@ -72,7 +72,10 @@ h2 {
 
 	h2.page-title {
 		font-size: 5em;
-		text-align: center;
+		/* The text-align center is no longer needed since I'm absolutely positioning
+		this element. Since we've taken full control over where we're placing this element
+		the text-align center style rule doesn't have any affect over this element anymore */
+		/*text-align: center;*/
 		color: #fff;
 		/*margin: 50% 0;*/
 		text-shadow: 2px 2px #222;
