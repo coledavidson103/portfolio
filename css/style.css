@@ -64,10 +64,18 @@ h2 {
 	nav a {
 		color: #fff;
 		text-decoration: none;
+		transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
 	}
 
 	nav a:hover {
 		color: #039BE5;
+		transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
 	}
 
 	h2.page-title {
@@ -75,7 +83,7 @@ h2 {
 		/* The text-align center is no longer needed since I'm absolutely positioning
 		this element. Since we've taken full control over where we're placing this element
 		the text-align center style rule doesn't have any affect over this element anymore */
-		/*text-align: center;*/
+		text-align: center;
 		color: #fff;
 		/*margin: 50% 0;*/
 		text-shadow: 2px 2px #222;
@@ -94,6 +102,18 @@ h2 {
 		color: #fff;
 		margin: 0 auto;
 		width: 100%;
+		transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+	}
+
+	.scroller a:hover {
+		color: #039BE5;
+		transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;		
 	}
 
 /***** MAIN *****/
@@ -124,11 +144,19 @@ h2 {
 		text-decoration: none;
 		text-align: center;
 		letter-spacing: 0.05em;
+		transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;		
 	}
 
 	.blue-button:hover {
 		background-color: #fff;
 		color: #039BE5;
+		transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;		
 	}
 
 	.sort {
@@ -178,6 +206,18 @@ h2 {
 
 	.social a {
 		color: #58585a;
+		transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+	}
+
+	.social a:hover {
+		color: #039BE5;
+		transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;		
 	}
 
 	.copyright {
