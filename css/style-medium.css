@@ -1,52 +1,39 @@
-@media (min-width: 48em /*768px*/) {
+@media (min-width: 48em) {
+  /***** HEADER *****/
+  .logo {
+    width: 20em; }
 
+  nav {
+    width: auto;
+    line-height: 4em; }
 
+  nav li {
+    display: inline-block;
+    padding: 0 0.29em; }
 
-	/***** HEADER *****/
-	.logo {
-		width: 20em;
-	}
+  h2.page-title {
+    /*margin: 2em 0 0 0;*/ }
 
-	nav {
-		width: auto;
-		line-height: 4em;
-	}
+  /***** MAIN *****/
+  .workspace {
+    padding: 0.5em; }
 
-	nav li {
-		display: inline-block;
-		padding: 0 0.29em;
-	}
+  .workspace h2 {
+    padding: 0 0 0.5em 0; }
 
-	h2.page-title {
+  .workspace-slider {
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto; }
 
-		/*margin: 2em 0 0 0;*/
-	}
+  .workspace-display {
+    background-color: #646464;
+    overflow: hidden; }
 
-	/***** MAIN *****/
-	.workspace {
-		padding: 0.5em;
-	}
+  .work img {
+    width: 30%;
+    margin: 1.59%;
+    float: left;
+    padding: 0; } }
 
-	.workspace h2 {
-		padding: 0 0 0.5em 0;
-	}
-
-	.workspace-slider {
-		width: 85%;
-		margin-right: auto;
-		margin-left: auto;
-	}
-
-	.workspace-display {
-		background-color: rgba(100,100,100,100.5);
-		overflow: hidden;
-	}
-
-	.work img {
-		width: 30%;
-		margin: 1.59%;
-		float: left;
-		padding: 0;
-	}
-
-}
+/*# sourceMappingURL=style-medium.css.map */

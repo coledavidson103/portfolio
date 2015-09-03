@@ -1,0 +1,52 @@
+@media (min-width: 48em /*768px*/) {
+
+
+
+	/***** HEADER *****/
+	.logo {
+		width: 20em;
+	}
+
+	nav {
+		width: auto;
+		line-height: 4em;
+	}
+
+	nav li {
+		display: inline-block;
+		padding: 0 0.29em;
+	}
+
+	h2.page-title {
+
+		/*margin: 2em 0 0 0;*/
+	}
+
+	/***** MAIN *****/
+	.workspace {
+		padding: 0.5em;
+	}
+
+	.workspace h2 {
+		padding: 0 0 0.5em 0;
+	}
+
+	.workspace-slider {
+		width: 85%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.workspace-display {
+		background-color: rgba(100,100,100,100.5);
+		overflow: hidden;
+	}
+
+	.work img {
+		width: 30%;
+		margin: 1.59%;
+		float: left;
+		padding: 0;
+	}
+
+}

@@ -1,0 +1,242 @@
+/***** VARIABLES *****/
+
+	$color-dark: #58585a;
+	$color-accent: #039BE5;
+	$color-extradark: #333;
+	$color-lightest: #fff;
+
+
+/***** GENERAL STYLES *****/
+
+	html { 
+		height: 100%;
+	}
+
+	body {
+		height: 100%;
+		color: $color-dark;
+		font-size: 1em;
+		font-family: 'Source Sans Pro', Helvetica, arial, sans-serif;
+	}
+
+	strong {
+		font-weight: 800;
+	}
+
+	h2 {
+		font-family: Pacifico, Times, serif;
+		font-size: 2em;
+	}
+
+/***** HEADER *****/
+
+	header {
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		background-attachment: fixed;
+		background-image: url(../img/header-background.jpg);
+		/* Setting positioning to relative so that .page-title can be absolutely
+		positioned to this */
+		position: relative;
+	}
+
+	.top-bar {
+		height: 10em;
+		overflow: hidden;
+	}
+
+	.logo {
+		width: 60%; 
+		float: left;
+
+			img {
+			width: 100%;
+			}
+
+			p {
+			color: rgba(0,0,0,0);
+			font-size: 0;
+			}
+	}
+
+	nav {
+		width: 35%;
+		color: $color-lightest;
+		float: right;
+		margin-top: 1em;
+		margin-right: 0.5em;
+		text-align: right;
+		font-weight: 600;
+		text-shadow: 1px 1px #222;
+
+			a {
+				color: $color-lightest;
+				text-decoration: none;
+				transition: all 0.3s ease-in-out;
+				-moz-transition: all 0.3s ease-in-out;
+				-webkit-transition: all 0.3s ease-in-out;
+				-o-transition: all 0.3s ease-in-out;
+			}
+			
+
+			a:hover {
+				color: $color-accent;
+				transition: all 0.3s ease-in-out;
+				-moz-transition: all 0.3s ease-in-out;
+				-webkit-transition: all 0.3s ease-in-out;
+				-o-transition: all 0.3s ease-in-out;
+			}
+	}
+
+	h2.page-title {
+		font-size: 5em;
+		/* The text-align center is no longer needed since I'm absolutely positioning
+		this element. Since we've taken full control over where we're placing this element
+		the text-align center style rule doesn't have any affect over this element anymore */
+		text-align: center;
+		color: $color-lightest;
+		/*margin: 50% 0;*/
+		text-shadow: 2px 2px #222;
+
+		/* This will be absolutely positioned to its parent, the header */
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.scroller {
+
+		a{
+			position: absolute;
+			bottom: 2em;
+			text-align: center;
+			color: $color-lightest;
+			margin: 0 auto;
+			width: 100%;
+			transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			-webkit-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+		}
+
+		a:hover {
+			color: $color-accent;
+			transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			-webkit-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;		
+		}
+	}
+
+/***** MAIN *****/
+
+	.intro {
+		background-color: #fff;
+		margin: 0.5em;
+	}
+
+	.description {
+		text-align: center;
+	}
+
+	.next {
+		line-height: 5em;
+		text-align: center;
+		border-bottom: 1px solid $color-dark;
+	}
+
+	.blue-button {
+		border: 1px solid $color-accent;
+		background-color: $color-accent;
+		border-radius: 100px;
+		padding: 1em 1em;
+		font-weight: 600;
+		text-transform: uppercase;
+		color: $color-lightest;
+		text-decoration: none;
+		text-align: center;
+		letter-spacing: 0.05em;
+		transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;		
+	}
+
+	.blue-button:hover {
+		background-color: $color-lightest;
+		color: $color-accent;
+		transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;		
+	}
+
+	.sort {
+		text-transform: uppercase;
+		text-align: center;
+		padding: 0.5em;
+
+		p {
+			display: inline-block;
+		}
+
+		ul {
+			display: inline-block;
+		}
+
+		li {
+			display: inline-block;
+		}
+	}
+
+	.workspace {
+		background-color: $color-extradark;
+
+		h2 {
+			text-align: center;
+			padding: 0.5em;
+			color: $color-lightest;
+		}
+	}
+
+	.work img {
+		width: 100%;
+		padding: 0 0 1.5em 0;
+	}
+
+/*****FOOTER*****/
+
+	.social {
+		text-align: center;
+		margin: 1em 0;
+
+		li {
+			display: inline-block;
+			padding: 0.5em;
+		}
+
+		a {
+			color: $color-dark;
+			transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			-webkit-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+		}
+
+		a:hover {
+			color: $color-accent;
+			transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			-webkit-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;		
+		}
+	}
+
+	.copyright {
+		background-color: $color-extradark;
+		color: $color-lightest;
+		text-align: center;
+		padding: 0.5em;	
+	}
