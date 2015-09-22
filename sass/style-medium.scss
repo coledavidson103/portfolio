@@ -1,6 +1,11 @@
 @media (min-width: 48em /*768px*/) {
 
+	/***** VARIABLES *****/
 
+	$color-dark: #58585a;
+	$color-accent: #039BE5;
+	$color-extradark: #333;
+	$color-lightest: #fff;
 
 	/***** HEADER *****/
 	.logo {
@@ -8,8 +13,23 @@
 	}
 
 	nav {
+		display: block;
 		width: auto;
 		line-height: 4em;
+		position: static;
+		background: none;
+		float: right;
+
+		a {
+			color: $color-lightest;
+		}
+
+		.submenu {
+			display: none;
+			position: fixed;
+			top: 5em;
+			right: 7em;
+		}
 	}
 
 	nav li {

@@ -1,11 +1,23 @@
 @media (min-width: 48em) {
+  /***** VARIABLES *****/
   /***** HEADER *****/
   .logo {
     width: 20em; }
 
   nav {
+    display: block;
     width: auto;
-    line-height: 4em; }
+    line-height: 4em;
+    position: static;
+    background: none;
+    float: right; }
+    nav a {
+      color: #fff; }
+    nav .submenu {
+      display: none;
+      position: fixed;
+      top: 5em;
+      right: 7em; }
 
   nav li {
     display: inline-block;

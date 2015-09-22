@@ -48,9 +48,7 @@
 
 	.logo {
 		width: 15em; 
-		position: fixed;
-    	left: 50%;
-    	transform: translate(-50%, 0);		
+		position: fixed;	
 
 			img {
 			width: 100%;
@@ -60,6 +58,13 @@
 			color: rgba(0,0,0,0);
 			font-size: 0;
 			}
+	}
+
+	.mobile-nav {
+		float: right;
+		color: $color-lightest;
+		padding: 1em;
+		display: none;
 	}
 
 	nav {
@@ -73,6 +78,7 @@
 		background-color: rgba(255,255,255,0.5);
 		padding: 1em;
 		line-height: 2;
+		display: none;
 
 			a {
 				color: $color-dark;
@@ -123,7 +129,7 @@
 		transform: translate(-50%, -50%);
 	}
 
-	.scroller {
+	#scroller {
 
 		a{
 			position: absolute;
