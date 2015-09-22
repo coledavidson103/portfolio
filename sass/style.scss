@@ -47,8 +47,10 @@
 	}
 
 	.logo {
-		width: 60%; 
-		float: left;
+		width: 15em; 
+		position: fixed;
+    	left: 50%;
+    	transform: translate(-50%, 0);		
 
 			img {
 			width: 100%;
@@ -61,17 +63,19 @@
 	}
 
 	nav {
-		width: 35%;
-		color: $color-lightest;
-		float: right;
+		width: 100%;
+		color: $color-dark;
 		margin-top: 1em;
-		margin-right: 0.5em;
-		text-align: right;
+		text-align: center;
 		font-weight: 600;
-		text-shadow: 1px 1px #222;
+		position: fixed;
+		top: 7%;
+		background-color: rgba(255,255,255,0.5);
+		padding: 1em;
+		line-height: 2;
 
 			a {
-				color: $color-lightest;
+				color: $color-dark;
 				text-decoration: none;
 				transition: all 0.3s ease-in-out;
 				-moz-transition: all 0.3s ease-in-out;
@@ -86,6 +90,19 @@
 				-moz-transition: all 0.3s ease-in-out;
 				-webkit-transition: all 0.3s ease-in-out;
 				-o-transition: all 0.3s ease-in-out;
+			}
+
+			.submenu {
+				display: none;
+				background-color: $color-accent;
+
+				a {
+					color: $color-lightest;
+				}
+
+				a:hover {
+					color: $color-dark;
+				}
 			}
 	}
 
