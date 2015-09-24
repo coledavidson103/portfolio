@@ -44,7 +44,7 @@ header {
   float: right;
   color: #fff;
   padding: 1em;
-  display: none; }
+  display: block; }
 
 nav {
   width: 100%;
@@ -58,6 +58,8 @@ nav {
   padding: 1em;
   line-height: 2;
   display: none; }
+  nav.mobile-nav-show {
+    display: block; }
   nav a {
     color: #58585a;
     text-decoration: none;
@@ -159,6 +161,15 @@ h2.page-title {
     display: inline-block; }
   .sort li {
     display: inline-block; }
+
+.sort-select {
+  background-color: #039BE5;
+  color: #fff;
+  padding: 1em;
+  display: none; }
+
+.sort-select-show {
+  display: block; }
 
 .workspace {
   background-color: #333; }

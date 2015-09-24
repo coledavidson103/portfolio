@@ -64,7 +64,7 @@
 		float: right;
 		color: $color-lightest;
 		padding: 1em;
-		display: none;
+		display: block;
 	}
 
 	nav {
@@ -79,6 +79,10 @@
 		padding: 1em;
 		line-height: 2;
 		display: none;
+
+		&.mobile-nav-show {
+			display: block;
+		}
 
 			a {
 				color: $color-dark;
@@ -212,6 +216,17 @@
 		li {
 			display: inline-block;
 		}
+	}
+
+	.sort-select {
+		background-color: $color-accent;
+		color: $color-lightest;
+		padding: 1em;
+		display: none;
+	}
+
+	.sort-select-show {
+		display: block;
 	}
 
 	.workspace {

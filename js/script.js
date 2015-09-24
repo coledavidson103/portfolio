@@ -1,18 +1,17 @@
 // Determine the width of the window
 var w = $(window).width();
 
+// We don't need this anymore because we accomplished it
+// with CSS instead.
 // Show the menu button only if the screen is smaller than 769px
-if(w < 769) {
-	$('.mobile-nav').fadeIn();
-}
+// if(w < 769) {
+// 	$('.mobile-nav').fadeIn();
+// }
 
 // Fade in the mobile menu if the menu button is clicked
 $('.mobile-nav').on('click', function(){
-	$('nav').fadeIn();
+	$('nav').toggleClass('mobile-nav-show');
 });
-
-// Set the service submenu hidden status to true by default
-var ssmh = true;
 
 // If the service button in the menu is clicked,
 // the screen width is less than 769, and the service 
@@ -42,4 +41,17 @@ if(w > 768) {
 		$('.services-menu').fadeIn();
 	});
 }
+
+$('#scroller-link').on('click', function() {
+	$('#description').animatescroll();
+});
+
+$('#client-sort').on('click', function() {
+	$('#client-list').toggleClass('sort-select-show');
+});
+
+$('#vancouver-sort').on('click', function() {
+	$('.work').css('display', 'none');
+	$('.vancouver').css('display', 'block');
+});
 

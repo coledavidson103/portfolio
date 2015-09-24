@@ -51,7 +51,7 @@
 			<h2 class="page-title">Our Work</h2>
 
 			<div id="scroller">
-				<a href="#description"><i class="fa fa-angle-down fa-5x"></i></a>
+				<a id="scroller-link"><i class="fa fa-angle-down fa-5x"></i></a>
 			</div>	
 
 		</header>
@@ -60,7 +60,7 @@
 
 			<section class="intro">
 
-				<div class="description">
+				<div id="description">
 					<p><a name="description"></a>We've completed projects in both print and digital mediums for clients across the country, always coming in on time and on budget. View some of our favourite projects below, and then get in touch with us to find out how we can help you look good online and in person.</p>
 				</div>
 
@@ -75,10 +75,21 @@
 					<p>Sort by:</p>
 					<ul>
 						<li><strong>Featured</strong></li>
-						<li>Client</li>
+						<li id="client-sort">Client</li>
 						<li>Medium</li>
 						<li>Type</li>
 					</ul>
+
+					<div id="client-list" class="sort-select">
+
+						<ul>
+							<li>Young Liberals of Canada</li>
+							<li id="vancouver-sort">City of Vancouver</li>
+							<li>Liberal Party of Canada</li>
+							<li>Brian Santos for Ward 3</li>
+						</ul>
+
+					</div>
 
 				</div>
 
@@ -93,7 +104,7 @@
 					
 				<div class="workspace-display">
 					
-					<div class="work">
+					<div class="work vancouver">
 
 						<img src="img/work/work-1.png">
 
@@ -105,7 +116,7 @@
 
 					</div>
 
-					<div class="work">
+					<div class="work vancouver">
 
 						<img src="img/work/work-3.png">
 
@@ -143,6 +154,7 @@
 		</footer>	
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="js/animatescroll.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 
 	</body>
