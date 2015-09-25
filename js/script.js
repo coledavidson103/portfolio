@@ -17,30 +17,20 @@ $('.mobile-nav').on('click', function(){
 // the screen width is less than 769, and the service 
 // submenu is hidden, fade in the service submenu.
 $('.service-button').on('click', function () {
-	if(w < 769) {
-		if(ssmh == true) {
-			$('.services-menu').fadeIn();
-		};
-
-		// if the service submenu is not hidden (visible)
-		// hide it when the service button is clicked.
-		// This doesn't work because I need to set the ssmh variable
-		// to false.
-		if(ssmh == false) {
-			$('.services-menu').fadeOut();
-		};
-	};	
+			$('.services-menu').toggleClass('submenu-show');
 });
+
 
 // Check if the screen width is greater than 768, then fade in the
 // the services submenu when the service button is clicked
-if(w > 768) {
-	$('.service-button').on('click', function() {
+// if(w > 768) {
+// 	$('.service-button').on('click', function() {
+// 		$('.services-menu').toggleClass('submenu-show');
 		// The following also works but doesn't look as nice:
 		// $('.services-menu').css('display', 'inline-block');
-		$('.services-menu').fadeIn();
-	});
-}
+	// 	$('.services-menu').toggleClass('submenu-show');
+	// });
+// });
 
 $('#scroller-link').on('click', function() {
 	$('#description').animatescroll();

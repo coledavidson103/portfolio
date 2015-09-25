@@ -28,6 +28,10 @@
 		font-size: 2em;
 	}
 
+	a {
+		color: $color-accent;
+	}
+
 /***** HEADER *****/
 
 	header {
@@ -48,7 +52,7 @@
 
 	.logo {
 		width: 15em; 
-		position: fixed;	
+		position: absolute;	
 
 			img {
 			width: 100%;
@@ -59,6 +63,7 @@
 			font-size: 0;
 			}
 	}
+
 
 	.mobile-nav {
 		float: right;
@@ -74,7 +79,7 @@
 		text-align: center;
 		font-weight: 600;
 		position: fixed;
-		top: 7%;
+		top: 4em;
 		background-color: rgba(255,255,255,0.5);
 		padding: 1em;
 		line-height: 2;
@@ -84,36 +89,41 @@
 			display: block;
 		}
 
+		a {
+			color: $color-dark;
+			text-decoration: none;
+			transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			-webkit-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+		}
+		
+
+		a:hover {
+			color: $color-accent;
+			transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			-webkit-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+		}
+
+		.submenu {
+			display: none;
+			background-color: $color-accent;
+
 			a {
-				color: $color-dark;
-				text-decoration: none;
-				transition: all 0.3s ease-in-out;
-				-moz-transition: all 0.3s ease-in-out;
-				-webkit-transition: all 0.3s ease-in-out;
-				-o-transition: all 0.3s ease-in-out;
+				color: $color-lightest;
 			}
-			
 
 			a:hover {
-				color: $color-accent;
-				transition: all 0.3s ease-in-out;
-				-moz-transition: all 0.3s ease-in-out;
-				-webkit-transition: all 0.3s ease-in-out;
-				-o-transition: all 0.3s ease-in-out;
+				color: $color-dark;
 			}
+		}
 
-			.submenu {
-				display: none;
-				background-color: $color-accent;
+		.submenu-show {
+			display: block;
+		}
 
-				a {
-					color: $color-lightest;
-				}
-
-				a:hover {
-					color: $color-dark;
-				}
-			}
 	}
 
 	h2.page-title {
@@ -200,6 +210,33 @@
 		-o-transition: all 0.3s ease-in-out;		
 	}
 
+	.white-button {
+		border: 1px solid $color-lightest;
+		background-color: $color-lightest;
+		border-radius: 100px;
+		padding: 1em 1em;
+		font-weight: 600;
+		text-transform: uppercase;
+		color: $color-accent;
+		text-decoration: none;
+		text-align: center;
+		letter-spacing: 0.05em;
+		transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+	}
+
+	.white-button:hover {
+		background-color: $color-accent;
+		border-color: $color-lightest;
+		color: $color-lightest;
+		transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;		
+	}
+
 	.sort {
 		text-transform: uppercase;
 		text-align: center;
@@ -207,6 +244,7 @@
 
 		p {
 			display: inline-block;
+			font-size: 1.25em;
 		}
 
 		ul {
@@ -222,7 +260,12 @@
 		background-color: $color-accent;
 		color: $color-lightest;
 		padding: 1em;
+		margin-top: 0.5em;
 		display: none;
+
+		li {
+			margin: 0.25em;
+		}
 	}
 
 	.sort-select-show {

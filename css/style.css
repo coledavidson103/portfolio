@@ -16,6 +16,9 @@ h2 {
   font-family: Pacifico, Times, serif;
   font-size: 2em; }
 
+a {
+  color: #039BE5; }
+
 /***** HEADER *****/
 header {
   width: 100%;
@@ -33,7 +36,7 @@ header {
 
 .logo {
   width: 15em;
-  position: fixed; }
+  position: absolute; }
   .logo img {
     width: 100%; }
   .logo p {
@@ -53,7 +56,7 @@ nav {
   text-align: center;
   font-weight: 600;
   position: fixed;
-  top: 7%;
+  top: 4em;
   background-color: rgba(255, 255, 255, 0.5);
   padding: 1em;
   line-height: 2;
@@ -80,6 +83,8 @@ nav {
       color: #fff; }
     nav .submenu a:hover {
       color: #58585a; }
+  nav .submenu-show {
+    display: block; }
 
 h2.page-title {
   font-size: 5em;
@@ -151,12 +156,38 @@ h2.page-title {
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out; }
 
+.white-button {
+  border: 1px solid #fff;
+  background-color: #fff;
+  border-radius: 100px;
+  padding: 1em 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #039BE5;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out; }
+
+.white-button:hover {
+  background-color: #039BE5;
+  border-color: #fff;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out; }
+
 .sort {
   text-transform: uppercase;
   text-align: center;
   padding: 0.5em; }
   .sort p {
-    display: inline-block; }
+    display: inline-block;
+    font-size: 1.25em; }
   .sort ul {
     display: inline-block; }
   .sort li {
@@ -166,7 +197,10 @@ h2.page-title {
   background-color: #039BE5;
   color: #fff;
   padding: 1em;
+  margin-top: 0.5em;
   display: none; }
+  .sort-select li {
+    margin: 0.25em; }
 
 .sort-select-show {
   display: block; }

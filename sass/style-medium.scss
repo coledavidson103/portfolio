@@ -28,7 +28,16 @@
 			display: none;
 			position: fixed;
 			top: 5em;
-			right: 7em;
+			right: 11em;
+			padding: 0 1em;
+
+			li {
+				display: block;
+			}
+		}
+
+		.submenu-show {
+			display: block;
 		}
 	}
 
