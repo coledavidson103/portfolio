@@ -14,7 +14,6 @@
     nav a {
       color: #fff; }
     nav .submenu {
-      display: none;
       position: fixed;
       top: 5em;
       right: 11em;
@@ -27,6 +26,12 @@
   nav li {
     display: inline-block;
     padding: 0 0.29em; }
+
+  nav ul ul {
+    display: none; }
+
+  nav ul li:hover > ul {
+    display: block; }
 
   .mobile-nav {
     display: none; }
