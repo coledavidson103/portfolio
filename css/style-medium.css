@@ -55,10 +55,7 @@
     background-color: #646464;
     overflow: hidden; }
 
-  .work img {
-    width: 30%;
-    margin: 1.59%;
-    float: left;
-    padding: 0; } }
+  .grid-item {
+    width: 30%; } }
 
 /*# sourceMappingURL=style-medium.css.map */

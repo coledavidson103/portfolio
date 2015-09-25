@@ -48,7 +48,7 @@
 			</div>
 
 			<!-- Page title needs to use javascript to scroll properly. -->
-			<h2 class="page-title">Our Work</h2>
+			<div class="page-title-container"><h2 class="page-title">Our Work</h2></div>
 
 			<div id="scroller">
 				<a id="scroller-link"><i class="fa fa-angle-down fa-5x"></i></a>
@@ -82,13 +82,13 @@
 						<li class="blue-button">Type</li>
 					</ul>
 
-					<div id="client-list" class="sort-select">
+					<div id="client-list" class="filter-button-group sort-select">
 
 						<ul>
-							<li class="white-button">Young Liberals of Canada</li>
-							<li id="vancouver-sort" class="white-button">City of Vancouver</li>
+							<li data-filter=".ylc" class="white-button" id="ylc">Young Liberals of Canada</li>
+							<li data-filter=".vancouver" class="white-button" id="vancouver">City of Vancouver</li>
 							<li class="white-button">Liberal Party of Canada</li>
-							<li class="white-button">Brian Santos for Ward 3</li>
+							<li data-filter=".ylc" class="white-button">Brian Santos for Ward 3</li>
 						</ul>
 
 					</div>
@@ -104,93 +104,93 @@
 
 				<div class="workspace-slider">
 					
-				<div class="workspace-display">
+				<div class="grid workspace-display">
 					
-					<div class="work vancouver">
+					<div class="grid-item work vancouver">
 
 						<img src="img/work/work-1.png">
 
 					</div>
 
-					<div class="work">
+					<div class="grid-item work ylc">
 
 						<img src="img/work/work-2.png">
 
 					</div>
 
-					<div class="work vancouver">
+					<div class="grid-item work vancouver lpc">
 
 						<img src="img/work/work-3.png">
 
 					</div>
 
-					<div class="work vancouver">
+					<div class="grid-item work vancouver">
 
 						<img src="img/work/work-1.png">
 
 					</div>
 
-					<div class="work">
+					<div class="grid-item work ylc">
 
 						<img src="img/work/work-2.png">
 
 					</div>
 
-					<div class="work vancouver">
+					<div class="grid-item work vancouver lpc">
 
 						<img src="img/work/work-3.png">
 
 					</div>
 
-					<div class="work vancouver">
+					<div class="grid-item work vancouver">
 
 						<img src="img/work/work-1.png">
 
 					</div>
 
-					<div class="work">
+					<div class="grid-item work ylc">
 
 						<img src="img/work/work-2.png">
 
 					</div>
 
-					<div class="work vancouver">
+					<div class="grid-item work vancouver lpc">
 
 						<img src="img/work/work-3.png">
 
 					</div>
 
-					<div class="work vancouver">
+					<div class="grid-item work vancouver">
 
 						<img src="img/work/work-1.png">
 
 					</div>
 
-					<div class="work">
+					<div class="grid-item work">
 
 						<img src="img/work/work-2.png">
 
 					</div>
 
-					<div class="work vancouver">
+					<div class="grid-item work vancouver">
 
 						<img src="img/work/work-3.png">
 
 					</div>
 
-					<div class="work vancouver">
+					<div class="grid-item work vancouver">
 
 						<img src="img/work/work-1.png">
 
 					</div>
 
-					<div class="work">
+					<div class="grid-item work">
 
 						<img src="img/work/work-2.png">
 
 					</div>
 
-					<div class="work vancouver">
+					<div class="grid-item work vancouver">
 
 						<img src="img/work/work-3.png">
 
@@ -229,6 +229,7 @@
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.js"></script>
 	<script type="text/javascript" src="js/animatescroll.min.js"></script>
+	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 
 	</body>

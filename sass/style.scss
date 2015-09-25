@@ -126,6 +126,18 @@
 
 	}
 
+	.page-title-container {
+		width: 23em;
+		height: 6em;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		// z-index: 0;
+	}
+
 	h2.page-title {
 		font-size: 5em;
 		/* The text-align center is no longer needed since I'm absolutely positioning
@@ -137,10 +149,10 @@
 		text-shadow: 2px 2px #222;
 
 		/* This will be absolutely positioned to its parent, the header */
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
+		// position: absolute;
+		// top: 50%;
+		// left: 50%;
+		// transform: translate(-50%, -50%);
 	}
 
 	#scroller {
@@ -237,6 +249,12 @@
 		-o-transition: all 0.3s ease-in-out;		
 	}
 
+	.white-button:active {
+		background-color: $color-accent;
+		border-color: $color-lightest;
+		color: $color-lightest;
+	}
+
 	.sort {
 		text-transform: uppercase;
 		text-align: center;
@@ -285,6 +303,10 @@
 	.work img {
 		width: 100%;
 		padding: 0 0 1.5em 0;
+	}
+
+	.grid-item {
+		width: 100%;
 	}
 
 /*****FOOTER*****/

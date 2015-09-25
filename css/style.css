@@ -86,6 +86,16 @@ nav {
   nav .submenu-show {
     display: block; }
 
+.page-title-container {
+  width: 23em;
+  height: 6em;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; }
+
 h2.page-title {
   font-size: 5em;
   /* The text-align center is no longer needed since I'm absolutely positioning
@@ -95,11 +105,7 @@ h2.page-title {
   color: #fff;
   /*margin: 50% 0;*/
   text-shadow: 2px 2px #222;
-  /* This will be absolutely positioned to its parent, the header */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
+  /* This will be absolutely positioned to its parent, the header */ }
 
 #scroller a {
   position: absolute;
@@ -181,6 +187,11 @@ h2.page-title {
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out; }
 
+.white-button:active {
+  background-color: #039BE5;
+  border-color: #fff;
+  color: #fff; }
+
 .sort {
   text-transform: uppercase;
   text-align: center;
@@ -215,6 +226,9 @@ h2.page-title {
 .work img {
   width: 100%;
   padding: 0 0 1.5em 0; }
+
+.grid-item {
+  width: 100%; }
 
 /*****FOOTER*****/
 .social {
