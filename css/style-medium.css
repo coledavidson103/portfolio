@@ -44,7 +44,7 @@
     padding: 0.5em; }
 
   .workspace h2 {
-    padding: 0 0 0.5em 0; }
+    padding: 0.25em 0 0.5em 0; }
 
   .workspace-slider {
     width: 85%;
@@ -56,6 +56,7 @@
     overflow: hidden; }
 
   .grid-item {
-    width: 30%; } }
+    width: 30%;
+    margin: 1% 1.59%; } }
 
 /*# sourceMappingURL=style-medium.css.map */
