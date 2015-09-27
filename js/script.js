@@ -1,7 +1,16 @@
 $(document).ready(function () {	
 
 	// Load Fancybox
-	$(".fancybox").fancybox();
+	$(".fancybox").fancybox({
+    helpers : {
+        overlay : {
+	      	css : {
+              'background' : 'rgba(0, 0, 0, 0.75)'
+	          },
+          locked : false
+        }
+    }
+	});
 
 	// Determine the width of the window
 	var w = $(window).width();
