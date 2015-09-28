@@ -57,6 +57,9 @@
 
   .grid-item {
     width: 30%;
-    margin: 1% 1.59%; } }
+    margin: 1% 1.6%; }
+
+  .grid-item-width2 {
+    width: 63.2%; } }
 
 /*# sourceMappingURL=style-medium.css.map */

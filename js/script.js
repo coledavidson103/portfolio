@@ -53,7 +53,7 @@ $(document).ready(function () {
 	$('.grid').isotope({
 	  // options
 	  itemSelector: '.grid-item',
-	  layoutMode: 'fitRows'
+	  layoutMode: 'masonry'
 	});
 
 	// Show client sorting options
@@ -70,6 +70,8 @@ $(document).ready(function () {
 	  var filterValue = $(this).attr('data-filter');
 	  $grid.isotope({ filter: filterValue });
 	});
+
+	$grid.isotope({ sortBy : 'random' });
 
 	// Title changes
 	$('#ylc').on('click', function () {
