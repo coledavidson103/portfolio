@@ -76,12 +76,12 @@
 				<!-- The sort menu needs javascript to work properly. Currently frozen on FEATURED for display purposes. -->
 				<div class="sort">
 
-					<p><strong>Sort by:</strong></p>
+					<p><strong>Filter by:</strong></p>
 					<ul>
-						<li class="blue-button">Featured</li>
+						<li data-filter=".featured" id="featured" class="blue-button">Featured</li>
 						<li id="client-sort" class="blue-button">Client</li>
-						<li class="blue-button">Medium</li>
-						<li class="blue-button">Type</li>
+						<li id="medium-sort" class="blue-button">Medium</li>
+						<li id="type-sort" class="blue-button">Type</li>
 					</ul>
 
 					<div id="client-list" class="filter-button-group sort-select">
@@ -89,8 +89,29 @@
 						<ul>
 							<li data-filter=".ylc" class="white-button" id="ylc">Young Liberals of Canada</li>
 							<li data-filter=".vancouver" class="white-button" id="vancouver">City of Vancouver</li>
-							<li class="white-button">Liberal Party of Canada</li>
-							<li data-filter=".ylc" class="white-button">Brian Santos for Ward 3</li>
+							<li data-filter=".lpc"class="white-button" id="lpc">Liberal Party of Canada</li>
+							<li data-filter=".may" class="white-button" id="may">Bryan May Campaign</li>
+							<li data-filter=".sorbara" class="white-button" id="sorbara">Francesco Sorbara Campaign</li>
+						</ul>
+					</div>
+
+					<div id="medium-list" class="filter-button-group sort-select">
+
+						<ul>
+							<li data-filter=".web" class="white-button" id="web">Web</li>
+							<li data-filter=".print" class="white-button" id="print">Print</li>
+						</ul>
+
+					</div>
+
+					<div id="type-list" class="filter-button-group sort-select">
+
+						<ul>
+							<li data-filter=".social" class="white-button" id="social">Social Media Graphics</li>
+							<li data-filter=".info" class="white-button" id="info">Infographics</li>
+							<li data-filter=".postcard" class="white-button" id="postcard">Postcard</li>
+							<li data-filter=".flyer" class="white-button" id="flyer">Flyer</li>
+							<li data-filter=".door" class="white-button" id="door">Door Hanger</li>
 						</ul>
 
 					</div>
@@ -108,7 +129,7 @@
 					
 				<div class="grid workspace-display">
 					
-					<div class="grid-item work ylc web social">
+					<div class="grid-item work featured ylc web social">
 
 						<a class="fancybox" rel="group" href="img/work/1.png"><img src="img/thumbs/1.jpeg"></a>
 
@@ -186,7 +207,7 @@
 
 					</div>
 
-					<div class="grid-item work vancouver web social">
+					<div class="grid-item work featured vancouver web social">
 
 						<a class="fancybox" rel="group" href="img/work/14png"><img src="img/thumbs/14.jpeg"></a>
 
@@ -228,7 +249,7 @@
 
 					</div>
 
-					<div class="grid-item work ylc web social">
+					<div class="grid-item work featured ylc web social">
 
 						<a class="fancybox" rel="group" href="img/work/21.png"><img src="img/thumbs/21.jpeg"></a>
 
@@ -258,7 +279,7 @@
 
 					</div>
 
-					<div class="grid-item grid-item-width2 work ylc web social">
+					<div class="grid-item grid-item-width2 work featured ylc web social">
 
 						<a class="fancybox" rel="group" href="img/work/26.png"><img src="img/thumbs/26.jpeg"></a>
 
@@ -279,6 +300,222 @@
 					<div class="grid-item grid-item-width2 work ylc web social">
 
 						<a class="fancybox" rel="group" href="img/work/30.jpg"><img src="img/thumbs/30.jpeg"></a>
+
+					</div>
+
+					<div class="grid-item work vancouver web social">
+
+						<a class="fancybox" rel="group" href="img/work/31.png"><img src="img/thumbs/31.jpeg"></a>
+
+					</div>
+
+					<div class="grid-item work vancouver web social">
+
+						<a class="fancybox" rel="group" href="img/work/32.png"><img src="img/thumbs/32.jpeg"></a>
+
+					</div>
+
+					<div class="grid-item work vancouver web social">
+
+						<a class="fancybox" rel="group" href="img/work/33.png"><img src="img/thumbs/33.jpeg"></a>
+
+					</div>
+
+					<div class="grid-item work vancouver web social">
+
+						<a class="fancybox" rel="group" href="img/work/34.png"><img src="img/thumbs/34.jpeg"></a>
+
+					</div>
+
+					<div class="grid-item work vancouver web social">
+
+						<a class="fancybox" rel="group" href="img/work/35.png"><img src="img/thumbs/35.jpeg"></a>
+
+					</div>
+
+					<div class="grid-item work vancouver web social">
+
+						<a class="fancybox" rel="group" href="img/work/36.png"><img src="img/thumbs/36.jpeg"></a>
+
+					</div>
+
+					<div class="grid-item work vancouver web social">
+
+						<a class="fancybox" rel="group" href="img/work/37.png"><img src="img/thumbs/37.jpeg"></a>
+
+					</div>
+
+					<div class="grid-item grid-item-width2 work sorbara print flyer">
+
+						<a class="fancybox" rel="group" href="img/work/38.jpg"><img src="img/thumbs/38.jpeg"></a>
+
+					</div>
+
+					<div class="grid-item work lpc web info">
+
+						<a class="fancybox" rel="group" href="img/work/39.png"><img src="img/thumbs/39.jpeg"></a>
+
+					</div>
+
+					<div class="grid-item grid-item-width2 work ylc print postcard">
+
+						<a class="fancybox" rel="group" href="img/work/40.jpg"><img src="img/thumbs/40.jpeg"></a>
+
+					</div>
+
+					<div class="grid-item work ylc web social">
+
+						<a class="fancybox" rel="group" href="img/work/41.png"><img src="img/thumbs/41.jpeg"></a>
+
+					</div>
+
+					<div class="grid-item grid-item-width2 work ylc web social">
+
+						<a class="fancybox" rel="group" href="img/work/42.png"><img src="img/thumbs/42.jpeg"></a>
+
+					</div>
+
+					<div class="grid-item work featured ylc web social">
+
+						<a class="fancybox" rel="group" href="img/work/43.png"><img src="img/thumbs/43.jpeg"></a>
+
+					</div>
+
+					<div class="grid-item work ylc web social">
+
+						<a class="fancybox" rel="group" href="img/work/44.png"><img src="img/thumbs/44.jpeg"></a>
+
+					</div>
+
+					<div class="grid-item grid-item-width2 work ylc web social">
+
+						<a class="fancybox" rel="group" href="img/work/45.png"><img src="img/thumbs/45.jpeg"></a>
+
+					</div>
+
+					<div class="grid-item work ylc web social">
+
+						<a class="fancybox" rel="group" href="img/work/46.png"><img src="img/thumbs/46.jpeg"></a>
+
+					</div>
+
+					<div class="grid-item work ylc web social info">
+
+						<a class="fancybox" rel="group" href="img/work/47.png"><img src="img/thumbs/47.jpeg"></a>
+
+					</div>
+
+					<div class="grid-item work ylc web social">
+
+						<a class="fancybox" rel="group" href="img/work/48.png"><img src="img/thumbs/48.jpeg"></a>
+
+					</div>
+
+					<div class="grid-item work ylc web social">
+
+						<a class="fancybox" rel="group" href="img/work/49.png"><img src="img/thumbs/49.jpeg"></a>
+
+					</div>
+
+					<div class="grid-item work ylc web social">
+
+						<a class="fancybox" rel="group" href="img/work/50.png"><img src="img/thumbs/50.jpeg"></a>
+
+					</div>
+
+					<div class="grid-item work ylc web social">
+
+						<a class="fancybox" rel="group" href="img/work/51.png"><img src="img/thumbs/51.jpeg"></a>
+
+					</div>
+
+					<div class="grid-item work ylc web social">
+
+						<a class="fancybox" rel="group" href="img/work/52.png"><img src="img/thumbs/52.jpeg"></a>
+
+					</div>
+
+					<div class="grid-item work ylc web social">
+
+						<a class="fancybox" rel="group" href="img/work/53.png"><img src="img/thumbs/53.jpeg"></a>
+
+					</div>
+
+					<div class="grid-item grid-item-width2 work ylc print postcard">
+
+						<a class="fancybox" rel="group" href="img/work/54.jpg"><img src="img/thumbs/54.jpeg"></a>
+
+					</div>
+
+					<div class="grid-item grid-item-width2 work ylc print postcard">
+
+						<a class="fancybox" rel="group" href="img/work/55.jpg"><img src="img/thumbs/55.jpeg"></a>
+
+					</div>
+
+					<div class="grid-item grid-item-width2 work ylc web social">
+
+						<a class="fancybox" rel="group" href="img/work/56.png"><img src="img/thumbs/56.jpeg"></a>
+
+					</div>
+
+					<div class="grid-item grid-item-width2 work may web social">
+
+						<a class="fancybox" rel="group" href="img/work/57.png"><img src="img/thumbs/57.jpeg"></a>
+
+					</div>
+
+					<div class="grid-item work lpc web info">
+
+						<a class="fancybox" rel="group" href="img/work/58.png"><img src="img/thumbs/58.jpeg"></a>
+
+					</div>
+
+					<div class="grid-item work lpc web info">
+
+						<a class="fancybox" rel="group" href="img/work/59.png"><img src="img/thumbs/59.jpeg"></a>
+
+					</div>
+
+					<div class="grid-item work may print door">
+
+						<a class="fancybox" rel="group" href="img/work/60.jpg"><img src="img/thumbs/60.jpeg"></a>
+
+					</div>
+
+					<div class="grid-item work may print door">
+
+						<a class="fancybox" rel="group" href="img/work/61.jpg"><img src="img/thumbs/61.jpeg"></a>
+
+					</div>
+
+					<div class="grid-item work sorbara web social">
+
+						<a class="fancybox" rel="group" href="img/work/62.png"><img src="img/thumbs/62.jpeg"></a>
+
+					</div>
+
+					<div class="grid-item grid-item-width2 work sorbara print postcard">
+
+						<a class="fancybox" rel="group" href="img/work/63.jpg"><img src="img/thumbs/63.jpeg"></a>
+
+					</div>
+
+					<div class="grid-item grid-item-width2 work sorbara print postcard">
+
+						<a class="fancybox" rel="group" href="img/work/64.jpg"><img src="img/thumbs/64.jpeg"></a>
+
+					</div>
+
+					<div class="grid-item grid-item-width2 work may print postcard">
+
+						<a class="fancybox" rel="group" href="img/work/65.jpg"><img src="img/thumbs/65.jpg"></a>
+
+					</div>
+
+					<div class="grid-item grid-item-width2 work may print postcard">
+
+						<a class="fancybox" rel="group" href="img/work/66.jpg"><img src="img/thumbs/66.jpg"></a>
 
 					</div>
 

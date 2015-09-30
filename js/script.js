@@ -56,9 +56,23 @@ $(document).ready(function () {
 	  layoutMode: 'masonry'
 	});
 
+	$(document).ready(function() {
+		$grid.isotope({ filter: '.featured'});
+	});
+
 	// Show client sorting options
 	$('#client-sort').on('click', function() {
 		$('#client-list').toggleClass('sort-select-show');
+	});
+
+	// Show medium sorting options
+	$('#medium-sort').on('click', function() {
+		$('#medium-list').toggleClass('sort-select-show');
+	});
+
+	// Show type sorting options
+	$('#type-sort').on('click', function() {
+		$('#type-list').toggleClass('sort-select-show');
 	});
 
 	// init Isotope
@@ -71,6 +85,10 @@ $(document).ready(function () {
 	  $grid.isotope({ filter: filterValue });
 	});
 
+	$('#featured').on('click', function() {
+		$grid.isotope({ filter: '.featured'});
+	})
+
 	$grid.isotope({ sortBy : 'random' });
 
 	// Title changes
@@ -80,6 +98,50 @@ $(document).ready(function () {
 
 	$('#vancouver').on('click', function () {
 		$('.workspace h2').text('Client: City of Vancouver');
+	});
+
+	$('#lpc').on('click', function () {
+		$('.workspace h2').text('Client: Liberal Party of Canada');
+	});
+
+	$('#may').on('click', function () {
+		$('.workspace h2').text('Client: Bryan May Campaign');
+	});
+
+	$('#web').on('click', function () {
+		$('.workspace h2').text('Medium: Web Graphics');
+	});
+
+	$('#print').on('click', function () {
+		$('.workspace h2').text('Medium: Print Graphics');
+	});
+
+	$('#social').on('click', function () {
+		$('.workspace h2').text('Type: Social Media Graphics');
+	});
+
+	$('#info').on('click', function () {
+		$('.workspace h2').text('Type: Inforgraphics');
+	});
+
+	$('#postcard').on('click', function () {
+		$('.workspace h2').text('Type: Postcard');
+	});
+
+	$('#flyer').on('click', function () {
+		$('.workspace h2').text('Type: Flyer');
+	});
+
+	$('#door').on('click', function () {
+		$('.workspace h2').text('Type: Door Hanger');
+	});
+
+	$('#sorbara').on('click', function () {
+		$('.workspace h2').text('Client: Francesco Sorbara Campaign');
+	});
+
+	$('#featured').on('click', function () {
+		$('.workspace h2').text('Featured Work');
 	});
 
 });

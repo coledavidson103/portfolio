@@ -162,6 +162,9 @@ h2.page-title {
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out; }
 
+.blue-button:active, .blue-button.is-checked {
+  background-color: red; }
+
 .white-button {
   border: 1px solid #fff;
   background-color: #fff;
@@ -202,7 +205,8 @@ h2.page-title {
   .sort ul {
     display: inline-block; }
   .sort li {
-    display: inline-block; }
+    display: inline-block;
+    margin-top: 0.5em; }
 
 .sort-select {
   background-color: #039BE5;

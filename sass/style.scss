@@ -222,6 +222,10 @@
 		-o-transition: all 0.3s ease-in-out;		
 	}
 
+	.blue-button:active, .blue-button.is-checked{
+		background-color: red;
+	}
+
 	.white-button {
 		border: 1px solid $color-lightest;
 		background-color: $color-lightest;
@@ -271,6 +275,7 @@
 
 		li {
 			display: inline-block;
+			margin-top: 0.5em;
 		}
 	}
 
