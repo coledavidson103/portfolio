@@ -49,99 +49,106 @@ $(document).ready(function () {
 		};
 	});
 
-	// Isotope
-	$('.grid').isotope({
-	  // options
-	  itemSelector: '.grid-item',
-	  layoutMode: 'masonry'
-	});
+setTimeout(function(){
 
-	$(document).ready(function() {
-		$grid.isotope({ filter: '.featured'});
-	});
+		// Isotope
+		$('.grid').isotope({
+		  // options
+		  itemSelector: '.grid-item',
+		  layoutMode: 'masonry'
+		});
 
-	// Show client sorting options
-	$('#client-sort').on('click', function() {
-		$('#client-list').toggleClass('sort-select-show');
-	});
+		
+		$('.grid').isotope({ filter: '.featured'});
+	
 
-	// Show medium sorting options
-	$('#medium-sort').on('click', function() {
-		$('#medium-list').toggleClass('sort-select-show');
-	});
+		// Show client sorting options
+		$('#client-sort').on('click', function() {
+			$('#client-list').toggleClass('sort-select-show');
+		});
 
-	// Show type sorting options
-	$('#type-sort').on('click', function() {
-		$('#type-list').toggleClass('sort-select-show');
-	});
+		// Show medium sorting options
+		$('#medium-sort').on('click', function() {
+			$('#medium-list').toggleClass('sort-select-show');
+		});
 
-	// init Isotope
-	var $grid = $('.grid').isotope({
-	  // options
-	});
-	// filter items on button click
-	$('.filter-button-group').on( 'click', 'li', function() {
-	  var filterValue = $(this).attr('data-filter');
-	  $grid.isotope({ filter: filterValue });
-	});
+		// Show type sorting options
+		$('#type-sort').on('click', function() {
+			$('#type-list').toggleClass('sort-select-show');
+		});
 
-	$('#featured').on('click', function() {
-		$grid.isotope({ filter: '.featured'});
-	})
+		// init Isotope
+		var $grid = $('.grid').isotope({
+		  // options
+		});
+		// filter items on button click
+		$('.filter-button-group').on( 'click', 'li', function() {
+		  var filterValue = $(this).attr('data-filter');
+		  $grid.isotope({ filter: filterValue });
+		});
 
-	$grid.isotope({ sortBy : 'random' });
+		$('#featured').on('click', function() {
+			$grid.isotope({ filter: '.featured'});
+		});
 
-	// Title changes
-	$('#ylc').on('click', function () {
-		$('.workspace h2').text('Client: Young Liberals of Canada');
-	});
+		$grid.isotope({ sortBy : 'random' });
 
-	$('#vancouver').on('click', function () {
-		$('.workspace h2').text('Client: City of Vancouver');
-	});
+		// Title changes
+		$('#ylc').on('click', function () {
+			$('.workspace h2').text('Client: Young Liberals of Canada');
+		});
 
-	$('#lpc').on('click', function () {
-		$('.workspace h2').text('Client: Liberal Party of Canada');
-	});
+		$('#vancouver').on('click', function () {
+			$('.workspace h2').text('Client: City of Vancouver');
+		});
 
-	$('#may').on('click', function () {
-		$('.workspace h2').text('Client: Bryan May Campaign');
-	});
+		$('#lpc').on('click', function () {
+			$('.workspace h2').text('Client: Liberal Party of Canada');
+		});
 
-	$('#web').on('click', function () {
-		$('.workspace h2').text('Medium: Web Graphics');
-	});
+		$('#may').on('click', function () {
+			$('.workspace h2').text('Client: Bryan May Campaign');
+		});
 
-	$('#print').on('click', function () {
-		$('.workspace h2').text('Medium: Print Graphics');
-	});
+		$('#web').on('click', function () {
+			$('.workspace h2').text('Medium: Web Graphics');
+		});
 
-	$('#social').on('click', function () {
-		$('.workspace h2').text('Type: Social Media Graphics');
-	});
+		$('#print').on('click', function () {
+			$('.workspace h2').text('Medium: Print Graphics');
+		});
 
-	$('#info').on('click', function () {
-		$('.workspace h2').text('Type: Inforgraphics');
-	});
+		$('#social').on('click', function () {
+			$('.workspace h2').text('Type: Social Media Graphics');
+		});
 
-	$('#postcard').on('click', function () {
-		$('.workspace h2').text('Type: Postcard');
-	});
+		$('#info').on('click', function () {
+			$('.workspace h2').text('Type: Inforgraphics');
+		});
 
-	$('#flyer').on('click', function () {
-		$('.workspace h2').text('Type: Flyer');
-	});
+		$('#postcard').on('click', function () {
+			$('.workspace h2').text('Type: Postcard');
+		});
 
-	$('#door').on('click', function () {
-		$('.workspace h2').text('Type: Door Hanger');
-	});
+		$('#flyer').on('click', function () {
+			$('.workspace h2').text('Type: Flyer');
+		});
 
-	$('#sorbara').on('click', function () {
-		$('.workspace h2').text('Client: Francesco Sorbara Campaign');
-	});
+		$('#door').on('click', function () {
+			$('.workspace h2').text('Type: Door Hanger');
+		});
 
-	$('#featured').on('click', function () {
-		$('.workspace h2').text('Featured Work');
-	});
+		$('#sorbara').on('click', function () {
+			$('.workspace h2').text('Client: Francesco Sorbara Campaign');
+		});
+
+		$('#featured').on('click', function () {
+			$('.workspace h2').text('Featured Work');
+		});
+
+		// console.log('did my timeout fire');
+		console.log('logging my timeout');
+	}, 1500);
+
 
 });
