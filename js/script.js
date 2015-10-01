@@ -62,6 +62,13 @@ setTimeout(function(){
 		$('.grid').isotope({ filter: '.featured'});
 	
 
+		$('.grid').isotope({ sortBy : 'random' });
+
+		// console.log('did my timeout fire');
+		console.log('logging my timeout');
+	}, 1500);
+
+
 		// Show client sorting options
 		$('#client-sort').on('click', function() {
 			$('#client-list').toggleClass('sort-select-show');
@@ -77,21 +84,23 @@ setTimeout(function(){
 			$('#type-list').toggleClass('sort-select-show');
 		});
 
-		// init Isotope
-		var $grid = $('.grid').isotope({
+
 		  // options
+
+
+		$('#featured').on('click', function() {
+			$('.grid').isotope({ filter: '.featured'});
 		});
+
+		// init Isotope
+		// var $grid = $('.grid').isotope({
+		// });
+
 		// filter items on button click
 		$('.filter-button-group').on( 'click', 'li', function() {
 		  var filterValue = $(this).attr('data-filter');
-		  $grid.isotope({ filter: filterValue });
+		  $('.grid').isotope({ filter: filterValue });
 		});
-
-		$('#featured').on('click', function() {
-			$grid.isotope({ filter: '.featured'});
-		});
-
-		$grid.isotope({ sortBy : 'random' });
 
 		// Title changes
 		$('#ylc').on('click', function () {
@@ -145,10 +154,5 @@ setTimeout(function(){
 		$('#featured').on('click', function () {
 			$('.workspace h2').text('Featured Work');
 		});
-
-		// console.log('did my timeout fire');
-		console.log('logging my timeout');
-	}, 1500);
-
 
 });
